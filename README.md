@@ -60,5 +60,5 @@ This Project Management System (PMS) is a JavaFX-based application that allows u
 
 2. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/KalanaBimsara/Project-Management-System_-CW-.git
+   cd Project-Management-System_-CW-
