@@ -1,0 +1,106 @@
+Category: cat4
+========================
+Project ID: 1001
+Project Name: Alpha Project
+Project Category: cat4
+Team Members: Alice, Bob
+Description: An innovative solution for modern problems.
+Country: USA
+Logo: C:\Users\kalan\OneDrive\Desktop\WEB_CW\images\product1.jpeg
+
+Project ID: 1002
+Project Name: Beta Build
+Project Category: cat4
+Team Members: Charlie, Dana
+Description: Building the future of technology.
+Country: Canada
+Logo: C:\Users\kalan\OneDrive\Desktop\WEB_CW\images\product2.jpeg
+
+Project ID: 1003
+Project Name: Iota Initiative
+Project Category: cat4
+Team Members: Quinn, Rachel
+Description: Initiating new projects with creative ideas.
+Country: Spain
+Logo: C:\Users\kalan\OneDrive\Desktop\WEB_CW\images\product3.jpeg
+
+Project ID: 1004
+Project Name: Kappa Kickstart
+Project Category: cat4
+Team Members: Steve, Tina
+Description: Kickstarting innovation in the tech world.
+Country: Brazil
+Logo: C:\Users\kalan\OneDrive\Desktop\WEB_CW\images\product4.jpeg
+
+Category: cat2
+========================
+Project ID: 2002
+Project Name: Delta Development
+Project Category: cat2
+Team Members: Grace, Henry
+Description: Developing cutting-edge software solutions.
+Country: Australia
+Logo: C:\Users\kalan\OneDrive\Desktop\WEB_CW\images\product6.jpeg
+
+Category: cat3
+========================
+Project ID: 3001
+Project Name: Epsilon Endeavor
+Project Category: cat3
+Team Members: Ivy, Jack
+Description: Endeavoring to innovate across industries.
+Country: Germany
+Logo: C:\Users\kalan\OneDrive\Desktop\WEB_CW\images\product7.jpeg
+
+Project ID: 3002
+Project Name: Zeta Zone
+Project Category: cat3
+Team Members: Karen, Liam
+Description: Zoning in on the next big thing in tech.
+Country: Japan
+Logo: C:\Users\kalan\OneDrive\Desktop\WEB_CW\images\product8.jpeg
+
+Category: cat1
+========================
+Project ID: 123
+Project Name: Test Project
+Project Category: cat1
+Team Members: Member 01, member 02 , member 03 , member04
+Description: this is test project 123 and here is the description
+Country: Sri lanka
+Logo: C:\Users\kalan\Downloads\icon2.png
+
+Project ID: 234
+Project Name: Updating  Project  234
+Project Category: cat1
+Team Members: Member 01, member 02 , member 03 , member04
+Description: this is test update project 234 and here is the description
+Country: USA
+Logo: C:\Users\kalan\Downloads\Untitled design.png
+
+Project ID: 4001
+Project Name: Eta Evolution
+Project Category: cat1
+Team Members: Mia, Noah
+Description: Evolving technology to meet new demands.
+Country: France
+Logo: C:\Users\kalan\OneDrive\Desktop\WEB_CW\images\product1.jpeg
+
+Project ID: 4002
+Project Name: Theta Transformation
+Project Category: cat1
+Team Members: Olivia, Paul
+Description: Transforming businesses with innovative solutions.
+Country: Italy
+Logo: C:\Users\kalan\OneDrive\Desktop\WEB_CW\images\product2.jpeg
+
+Category: cat4rg
+========================
+Project ID: 1004888
+Project Name: Kappa Kickstartthztht
+Project Category: cat4rg
+Team Members: Steve, Tina
+Description: Kickstarting innovation in the tech world.
+Country: Brazil
+Logo: C:\Users\kalan\OneDrive\Desktop\WEB_CW\images\product4.jpeg
+

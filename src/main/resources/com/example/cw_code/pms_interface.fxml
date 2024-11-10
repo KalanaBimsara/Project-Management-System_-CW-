@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="460.0" prefWidth="700.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cw_code.PmsInterface">
+   <children>
+      <AnchorPane fx:id="ButtonPanel" prefHeight="460.0" prefWidth="168.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="Home" layoutX="29.0" layoutY="142.0" mnemonicParsing="false" onAction="#SwitchPanels" prefHeight="42.0" prefWidth="110.0" text="HOME" />
+            <Button fx:id="Projects" layoutX="29.0" layoutY="208.0" mnemonicParsing="false" onAction="#SwitchPanels" prefHeight="42.0" prefWidth="110.0" text="PROJECTS" />
+            <Button fx:id="Judgement" layoutX="29.0" layoutY="276.0" mnemonicParsing="false" onAction="#SwitchPanels" prefHeight="42.0" prefWidth="110.0" text="JUDGEMENTS" />
+            <ImageView fx:id="UserIcon" fitHeight="102.0" fitWidth="127.0" layoutX="33.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../usericon.png" />
+               </image></ImageView>
+            <Button fx:id="Score" layoutX="29.0" layoutY="344.0" mnemonicParsing="false" onAction="#ShowScoreBarGraph" prefHeight="42.0" prefWidth="110.0" text="SCORE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ProjectPanel" layoutX="166.0" prefHeight="460.0" prefWidth="534.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="168.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="ShowProjectTable" layoutX="8.0" layoutY="11.0" onMouseClicked="#handleclickcolumn" prefHeight="218.0" prefWidth="515.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="11.0">
+               <columns>
+                  <TableColumn fx:id="projectIdColumn" prefWidth="65.0" text="Project ID" />
+                  <TableColumn fx:id="projectNameColumn" prefWidth="55.0" text="Name" />
+                  <TableColumn fx:id="projectCategoryColumn" prefWidth="60.0" text="Category" />
+                  <TableColumn fx:id="teamMembersColumn" prefWidth="94.0" text="Team Members" />
+                  <TableColumn fx:id="descriptionColumn" prefWidth="75.0" text="Description" />
+                  <TableColumn fx:id="countryColumn" prefWidth="56.0" text="Country" />
+                  <TableColumn fx:id="logoColumn" prefWidth="108.0" text="Logo" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Label layoutX="23.0" layoutY="254.0" prefHeight="17.0" prefWidth="64.0" text="Project ID " textFill="WHITE" />
+            <Label layoutX="23.0" layoutY="349.0" prefHeight="17.0" prefWidth="87.0" text="Country" textFill="WHITE" />
+            <Label layoutX="22.0" layoutY="319.0" prefHeight="17.0" prefWidth="110.0" text="Project Category" textFill="WHITE" />
+            <Label layoutX="22.0" layoutY="286.0" prefHeight="17.0" prefWidth="87.0" text="Project Name" textFill="WHITE" />
+            <Label layoutX="286.0" layoutY="362.0" prefHeight="17.0" prefWidth="96.0" text="Description" textFill="WHITE" AnchorPane.leftAnchor="285.0" AnchorPane.rightAnchor="153.0" />
+            <Label layoutX="285.0" layoutY="277.0" prefHeight="17.0" prefWidth="96.0" text="Team Members" textFill="WHITE" AnchorPane.leftAnchor="285.0" AnchorPane.rightAnchor="153.0" />
+            <TextField fx:id="ProjectID" layoutX="131.0" layoutY="248.0" prefHeight="26.0" prefWidth="144.0" AnchorPane.leftAnchor="131.0" AnchorPane.topAnchor="248.0" />
+            <TextField fx:id="ProjectName" layoutX="131.0" layoutY="280.0" prefHeight="26.0" prefWidth="144.0" AnchorPane.leftAnchor="131.0" />
+                        <Label layoutX="23.0" layoutY="382.0" prefHeight="17.0" prefWidth="87.0" text="Logo" textFill="WHITE" />
+            <Button fx:id="DeleteButton" layoutX="259.0" layoutY="415.0" mnemonicParsing="false" onAction="#DeleteProject" prefHeight="36.0" prefWidth="74.0" text="Delete" AnchorPane.bottomAnchor="9.0" />
+            <Button fx:id="ClearButton" layoutX="176.0" layoutY="415.0" mnemonicParsing="false" onAction="#ClearFields" prefHeight="36.0" prefWidth="74.0" text="Clear" AnchorPane.bottomAnchor="9.0" />
+            <Button fx:id="UpdateButton" layoutX="368.0" layoutY="415.0" mnemonicParsing="false" onAction="#UpdateProject" prefHeight="36.0" prefWidth="74.0" text="Update" AnchorPane.bottomAnchor="9.0" />
+            <Button fx:id="AddProjectButton" layoutX="452.0" layoutY="415.0" mnemonicParsing="false" onAction="#AddProject" prefHeight="36.0" prefWidth="74.0" text="Add" AnchorPane.bottomAnchor="9.0" />
+            <TextArea fx:id="members" layoutX="381.0" layoutY="251.0" prefHeight="70.0" prefWidth="144.0" AnchorPane.leftAnchor="381.0" AnchorPane.rightAnchor="9.0" />
+                        <Button fx:id="LogoUpload" layoutX="217.0" layoutY="378.0" mnemonicParsing="false" onAction="#uploadLogo" prefHeight="25.0" prefWidth="58.0" text="Browse" />
+            <TextField fx:id="Country" layoutX="131.0" layoutY="345.0" prefHeight="26.0" prefWidth="144.0" AnchorPane.leftAnchor="131.0" />
+            <TextField fx:id="ProjectCategory" layoutX="131.0" layoutY="313.0" prefHeight="26.0" prefWidth="144.0" AnchorPane.leftAnchor="131.0" />
+            <TextArea fx:id="Description" layoutX="381.0" layoutY="333.0" prefHeight="70.0" prefWidth="144.0" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="381.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="333.0" />
+            <TextField fx:id="logoPathField" layoutX="132.0" layoutY="378.0" prefHeight="26.0" prefWidth="82.0" AnchorPane.leftAnchor="131.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="JudgementPanel" layoutX="166.0" prefHeight="460.0" prefWidth="534.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="168.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="RandomTable" layoutX="10.0" layoutY="82.0" onMouseClicked="#handleRandomTableClick" prefHeight="197.0" prefWidth="515.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="9.0">
+               <columns>
+                  <TableColumn fx:id="JudgeCategory" prefWidth="70.0" text="Category" />
+                  <TableColumn fx:id="JudgeProjectID" prefWidth="78.0" text="Project ID" />
+                  <TableColumn fx:id="JudgeName" prefWidth="81.0" text="Name" />
+                  <TableColumn fx:id="JudgeMembers" prefWidth="71.0" text="Members" />
+                  <TableColumn fx:id="JudgeDescription" text="Description" />
+                  <TableColumn fx:id="JudgeCountry" prefWidth="66.0" text="Country" />
+                  <TableColumn fx:id="JudgeLogo" prefWidth="71.0" text="Logo" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Button fx:id="RandomSpotlight" layoutX="195.0" layoutY="18.0" mnemonicParsing="false" onAction="#RandomSpotlight" prefHeight="42.0" prefWidth="144.0" text="Random Spotlight" AnchorPane.leftAnchor="195.0" AnchorPane.rightAnchor="195.0" AnchorPane.topAnchor="18.0" />
+            <Label layoutX="49.0" layoutY="332.0" text="JUDGE 1" AnchorPane.leftAnchor="49.0" />
+            <Label layoutX="49.0" layoutY="368.0" text="JUDGE 2" AnchorPane.leftAnchor="49.0" />
+            <Label layoutX="277.0" layoutY="332.0" text="JUDGE 3" AnchorPane.rightAnchor="205.0" />
+            <Label layoutX="278.0" layoutY="368.0" text="JUDGE 4" AnchorPane.rightAnchor="205.0" />
+            <Button fx:id="SeeWinner" layoutX="367.0" layoutY="404.0" mnemonicParsing="false" onAction="#SeeWinners" prefHeight="42.0" prefWidth="144.0" text="See Winners" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="23.0" />
+            <TextField fx:id="Judge1" layoutX="107.0" layoutY="328.0" AnchorPane.leftAnchor="107.0" />
+            <TextField fx:id="Judge2" layoutX="107.0" layoutY="364.0" prefHeight="17.0" prefWidth="149.0" AnchorPane.leftAnchor="107.0" />
+            <TextField fx:id="Judge3" layoutX="335.0" layoutY="329.0" AnchorPane.rightAnchor="51.0" />
+            <TextField fx:id="Judge4" layoutX="335.0" layoutY="365.0" prefHeight="17.0" prefWidth="149.0" AnchorPane.rightAnchor="51.0" />
+            <Button fx:id="SubmitPoints" layoutX="19.0" layoutY="404.0" mnemonicParsing="false" onAction="#SubmitPoints" prefHeight="42.0" prefWidth="144.0" text="Submit Points" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="19.0" />
+            <Label fx:id="Displayselected" alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="289.0" prefHeight="25.0" prefWidth="513.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="8.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="HomePanel" layoutX="168.0" prefHeight="460.0" prefWidth="534.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="168.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="460.0" fitWidth="532.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.494659423828125" AnchorPane.rightAnchor="0.0">
+               <image>
+                  <Image url="@../../../Background.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="30.0" prefHeight="70.0" prefWidth="534.0" text="Welcome to Tech Expo Mangement System" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateLabel" alignment="CENTER" layoutX="-2.0" layoutY="120.0" prefHeight="56.0" prefWidth="532.0" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="39.0" />
+               </font></Label>
+            <Label fx:id="ProjectCount" alignment="CENTER" layoutX="1.0" layoutY="243.0" prefHeight="56.0" prefWidth="532.0" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ScorePanel" layoutX="168.0" prefHeight="460.0" prefWidth="534.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="168.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BarChart fx:id="barChart" layoutX="17.0" layoutY="30.0" styleClass="bar-chart" title="Scores" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="30.0">
+              <xAxis>
+                <CategoryAxis fx:id="BarChart" label="Porject" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis label="Score" side="LEFT" />
+              </yAxis>
+            </BarChart>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="WinnerPanel" layoutX="168.0" prefHeight="460.0" prefWidth="532.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="168.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="firstplace" alignment="CENTER" contentDisplay="CENTER" layoutX="53.0" layoutY="169.0" prefHeight="25.0" prefWidth="429.0" />
+            <Label fx:id="FirstPlaceDetials" alignment="CENTER" contentDisplay="CENTER" layoutX="53.0" layoutY="194.0" prefHeight="25.0" prefWidth="429.0" />
+            <Label fx:id="secondplace" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="389.0" prefHeight="25.0" prefWidth="227.0" />
+            <Label fx:id="SecondPlaceDetials" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="411.0" prefHeight="25.0" prefWidth="227.0" />
+            <Label fx:id="thirdplace" alignment="CENTER" contentDisplay="CENTER" layoutX="295.0" layoutY="388.0" prefHeight="25.0" prefWidth="227.0" />
+            <Label fx:id="ThirdPlaceDetials" alignment="CENTER" contentDisplay="CENTER" layoutX="295.0" layoutY="411.0" prefHeight="25.0" prefWidth="227.0" />
+            <ImageView fx:id="firstplaceimg" fitHeight="142.0" fitWidth="142.0" layoutX="195.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="secondplaceimg" fitHeight="142.0" fitWidth="142.0" layoutX="53.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="thidplaceimg" fitHeight="142.0" fitWidth="142.0" layoutX="338.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

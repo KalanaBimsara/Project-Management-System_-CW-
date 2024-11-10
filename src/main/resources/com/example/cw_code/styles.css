@@ -1,0 +1,266 @@
+
+.root {
+    -fx-font-family: 'Arial';
+}
+
+
+.anchor-pane {
+    -fx-background-color: #f0f0f0;
+}
+
+
+#HomePanel {
+    -fx-background-color: linear-gradient(from 100% 100% to 0% 0%, #495060FF, #2C2E3AFF);
+}
+
+
+#ProjectPanel {
+    -fx-background-color: linear-gradient(from 100% 100% to 0% 0%, #495060FF, #2C2E3AFF);
+}
+
+#JudgementPanel {
+    -fx-background-color: linear-gradient(from 100% 100% to 0% 0%, #495060FF, #2C2E3AFF);
+}
+
+#WinnersPanel {
+    -fx-background-color: linear-gradient(from 100% 100% to 0% 0%, #495060FF, #2C2E3AFF);
+}
+
+#WinnerPanel {
+    -fx-background-color: linear-gradient(from 100% 100% to 0% 0%, #495060FF, #2C2E3AFF);
+}
+
+#ButtonPanel {
+    -fx-background-color: #20222C;
+}
+
+
+.button {
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+
+}
+
+.button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 15, 0.5, 0, 0);
+}
+
+
+#Home {
+    -fx-background-color: #323743;
+    -fx-text-fill: white;
+}
+
+#Home:hover {
+    -fx-background-color: #495060FF;
+}
+
+#Projects {
+    -fx-background-color: #323743;
+    -fx-text-fill: white;
+}
+
+#Projects:hover {
+    -fx-background-color: #495060FF;
+}
+
+#Judgement {
+    -fx-background-color: #323743;
+    -fx-text-fill: white;
+}
+
+#Judgement:hover {
+    -fx-background-color: #495060FF;
+}
+
+#Score {
+    -fx-background-color: #323743;
+    -fx-text-fill: white;
+}
+
+#Score:hover {
+    -fx-background-color: #495060FF;
+}
+
+
+#DeleteButton {
+    -fx-background-color: #d32f2f;
+    -fx-text-fill: white;
+}
+
+#DeleteButton:hover {
+    -fx-background-color: #c0392b;
+}
+
+#AddProjectButton {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+}
+
+#AddProjectButton:hover {
+    -fx-background-color: #27ae60;
+}
+
+#UpdateButton {
+    -fx-background-color: #bc9b1e;
+    -fx-text-fill: white;
+}
+
+#UpdateButton:hover {
+    -fx-background-color: #b8990d;
+}
+
+#ClearButton {
+    -fx-background-color: #7f8c8d;
+    -fx-text-fill: white;
+}
+
+#ClearButton:hover {
+    -fx-background-color: #9dacac;
+}
+
+#RandomSpotlight {
+    -fx-background-color: #18181e;
+    -fx-text-fill: white;
+}
+
+#RandomSpotlight:hover {
+    -fx-background-color: #3c3f40;
+}
+
+#SubmitPoints {
+    -fx-background-color: #18181e;
+    -fx-text-fill: white;
+}
+
+#SubmitPoints:hover {
+    -fx-background-color: #3c3f40;
+}
+
+#SeeWinner {
+    -fx-background-color: #18181e;
+    -fx-text-fill: white;
+}
+
+#SeeWinner:hover {
+    -fx-background-color: #3c3f40;
+}
+
+#LogoUpload {
+    -fx-background-color: #1abc9c;
+    -fx-text-fill: white;
+}
+
+#LogoUpload:hover {
+    -fx-background-color: #16a085;
+}
+
+firstplaceimg {
+    -fx-background-color: #1abc9c;
+    -fx-text-fill: white;
+
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 15, 0.5, 0, 0);
+}
+
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+
+.text-field, .text-area {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c5cae9;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+    -fx-text-fill: black;
+}
+
+
+#ShowProjectTable {
+    -fx-background-color: #2c3e50;
+}
+
+#ShowProjectTable .column-header-background {
+    -fx-background-color: #34495e;
+}
+
+#ShowProjectTable .column-header-background .label {
+    -fx-text-fill: black;
+}
+
+#ShowProjectTable .table-row-cell {
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+}
+
+#ShowProjectTable .table-row-cell:hover {
+    -fx-text-fill: white;
+    -fx-background-color: #0b1d2e;
+}
+
+#ShowProjectTable .table-cell {
+    -fx-text-fill: white;
+}
+
+#RandomTable {
+    -fx-background-color: #2c3e50;
+}
+
+#RandomTable .column-header-background {
+    -fx-background-color: #34495e;
+
+}
+
+#RandomTable .column-header-background .label {
+    -fx-text-fill: black;
+}
+
+#RandomTable .table-row-cell {
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+}
+
+#RandomTable .table-row-cell:hover {
+    -fx-text-fill: white;
+    -fx-background-color: #0b1d2e;
+}
+
+#RandomTable .table-cell {
+    -fx-text-fill: white;
+}
+
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c5cae9;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.table-column {
+    -fx-text-fill: white;
+}
+
+
+.bar-chart {
+    -fx-background-color: #e8e8e8;
+    -fx-border-color: #c5cae9;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.bar-chart .chart-title {
+    -fx-text-fill: #131313;
+    -fx-font-weight: bold;
+}
+
+.bar-chart .axis-label {
+    -fx-text-fill: #151515;
+}
+
+.bar-chart .chart-bar {
+    -fx-bar-fill: #1e88e5;
+}
